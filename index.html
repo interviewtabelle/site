@@ -83,7 +83,7 @@
 		speed: 2000 // How many milliseconds until the next word show.
 	});
 
-	$("iframe[name='hiddenframe']").on("load", function(){
+	$("iframe[name='signUpframe']").on("load", function(){
 		$("form")[0].reset();
 		$("input[type='email']").attr("disabled", "").val("Thanks for Sign Up.");
 		$("#signUp").hide();
