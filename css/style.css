@@ -1,0 +1,373 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,300italic|Roboto|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,800,700,600,300);
+
+body, html{
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font-family: 'Open Sans', 'Lato', sans-serif;
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+	color: #797979;
+}
+
+ul{
+	list-style: none;
+	list-style-image: none;
+}
+
+header,nav,footer{
+	display: block;
+}
+
+h1{
+	font-size: 1.5em;
+	margin: 0 0 0.18em 0;
+}
+
+p{
+	margin: 0 0 0.80em 0;
+}
+
+a{
+	text-decoration: none;
+	color:#ffcc00;
+}
+
+nav{
+	width: 100%;
+	padding-top: 20px;
+	z-index: 100;
+	position: absolute;
+}
+
+nav.fixed{
+	position: fixed;
+	top: 0px;
+	background-color: rgba( 0,0,0, 0.7);
+}
+
+.logo{
+	background: url(../images/logo.png) no-repeat center top;
+	width: 300px;
+	height: 120px;
+}
+
+nav.fixed .logo{
+	background: url(../images/logo-sm.png) no-repeat center top;
+	width: 300px;
+	height: 50px;
+}
+
+nav ul{
+	float: right;
+	width: 350px;
+	padding-right: 125px;
+}
+
+nav ul li{
+	display: inline-block;
+	font-size: 15px;
+}
+
+nav ul li a{
+	display: inline-block;
+	height: auto;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	line-height: normal;
+	padding: 7px 14px;
+	font-weight: bold;
+}
+
+nav ul li.active a{
+	color: #ffcc00;
+}
+
+.content_section{
+	position: relative;
+	height: 100%;
+}
+
+#home .parallex{
+	width: 100%;
+	height: 790px;
+	margin: 0 auto;
+	background: url(../images/banner.jpg) no-repeat 50% 0 fixed;
+	background-size: cover;
+}
+
+.intro{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	margin: auto;
+	height: 50px;
+	text-align: center;
+}
+
+.intro-msg{
+	color: #FFFFFF;
+	word-spacing: 5px;
+	font-size: 25px;
+}
+
+.intro-msg .rotate{
+	color: #ffcc00;
+}
+
+#signUp{
+	margin-left: -80px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.signupform input{
+	font-size: 20px;
+	width: 50%;
+	height: 50px;
+	border: 2px solid #FFFFFF;
+	background: none;
+	color: #FFFFFF;
+	padding: 5px;
+	margin-top: 100px;
+}
+
+.signupform input:focus{
+	outline: 0;
+}
+
+.hideframe{
+	display: none;
+}
+
+.container{
+	width: 70%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 40px 0px 60px 0px;
+}
+
+.container h2 {
+	color: #e3e3e3;
+	display: block;
+	font-size: 50px;
+	font-weight: 500;
+	line-height: 66px;
+	margin: 0 0 35px;
+}
+
+#reach .container h2, #about .container h2 {
+  color: rgba(0, 0, 0, .80);
+}
+
+.reaction {
+	background: url(../images/reaction.jpg) no-repeat center top;
+	width: 712px;
+	height: 778px;
+	margin: 0 auto;
+}
+
+#team{
+	min-height: 460px;
+	background: rgba( 0, 0, 0, 0.7);
+}
+
+.people{
+	width: 60%;
+	margin: 60px auto;
+}
+
+#team img{
+	float: left;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border: 3px solid #E1E7EB;
+	margin-right: 50px;
+}
+
+#reach{
+	min-height: 460px;
+}
+
+.social{
+	width: 100%;
+	margin: 65px auto;
+}
+
+.social li{
+	float: left;
+	margin-right: 80px;
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	border: 4px solid #ffcc00;
+	cursor: pointer;
+}
+
+.social li i{
+	margin-top: 60px;
+}
+
+.social li a{
+	color: #ffcc00;
+}
+
+.social li.linkedin:hover{
+	background: #3b5998;
+	border: 4px solid #3b5998;
+}
+
+.social li.linkedin:hover a{
+	color: #FFFFFF;
+}
+
+.social li.twitter:hover{
+	background: #5ea9dd;
+	border: 4px solid #5ea9dd;
+}
+
+.social li.twitter:hover a{
+	color: #FFFFFF;
+}
+
+.social li.facebook:hover{
+	background: #3b5998;
+	border: 4px solid #3b5998;
+}
+
+.social li.facebook:hover a{
+	color: #FFFFFF;
+}
+
+footer{
+	background: rgba( 0,0,0, 0.7);
+	text-align: center;
+	padding: 10px;
+	font-size: 15px;
+	height: 90px;
+}
+
+.make{
+	float: right;
+	margin-right: 20px;
+}
+
+.scrollToTop{
+	display: none;
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	color: #FC0;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+.rotating {
+  display: inline-block;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: rotateX(0) rotateY(0) rotateZ(0);
+  -moz-transform: rotateX(0) rotateY(0) rotateZ(0);
+  -ms-transform: rotateX(0) rotateY(0) rotateZ(0);
+  -o-transform: rotateX(0) rotateY(0) rotateZ(0);
+  transform: rotateX(0) rotateY(0) rotateZ(0);
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform-origin-x: 50%;
+}
+
+.rotating.flip {
+  position: relative;
+}
+
+.rotating .front, .rotating .back {
+  left: 0;
+  top: 0;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.rotating .front {
+  position: absolute;
+  display: inline-block;
+  -webkit-transform: translate3d(0,0,1px);
+  -moz-transform: translate3d(0,0,1px);
+  -ms-transform: translate3d(0,0,1px);
+  -o-transform: translate3d(0,0,1px);
+  transform: translate3d(0,0,1px);
+}
+
+.rotating.flip .front {
+  z-index: 1;
+}
+
+.rotating .back {
+  display: block;
+  opacity: 0;
+}
+
+.rotating.spin {
+  -webkit-transform: rotate(360deg) scale(0);
+  -moz-transform: rotate(360deg) scale(0);
+  -ms-transform: rotate(360deg) scale(0);
+  -o-transform: rotate(360deg) scale(0);
+  transform: rotate(360deg) scale(0);
+}
+
+
+
+.rotating.flip .back {
+  z-index: 2;
+  display: block;
+  opacity: 1;
+  
+  -webkit-transform: rotateY(180deg) translate3d(0,0,0);
+  -moz-transform: rotateY(180deg) translate3d(0,0,0);
+  -ms-transform: rotateY(180deg) translate3d(0,0,0);
+  -o-transform: rotateY(180deg) translate3d(0,0,0);
+  transform: rotateY(180deg) translate3d(0,0,0);
+}
+
+.rotating.flip.up .back {
+  -webkit-transform: rotateX(180deg) translate3d(0,0,0);
+  -moz-transform: rotateX(180deg) translate3d(0,0,0);
+  -ms-transform: rotateX(180deg) translate3d(0,0,0);
+  -o-transform: rotateX(180deg) translate3d(0,0,0);
+  transform: rotateX(180deg) translate3d(0,0,0);
+}
+
+.rotating.flip.cube .front {
+  -webkit-transform: translate3d(0,0,100px) scale(0.9,0.9);
+  -moz-transform: translate3d(0,0,100px) scale(0.85,0.85);
+  -ms-transform: translate3d(0,0,100px) scale(0.85,0.85);
+  -o-transform: translate3d(0,0,100px) scale(0.85,0.85);
+  transform: translate3d(0,0,100px) scale(0.85,0.85);
+}
+
+.rotating.flip.cube .back {
+  -webkit-transform: rotateY(180deg) translate3d(0,0,100px) scale(0.9,0.9);
+  -moz-transform: rotateY(180deg) translate3d(0,0,100px) scale(0.85,0.85);
+  -ms-transform: rotateY(180deg) translate3d(0,0,100px) scale(0.85,0.85);
+  -o-transform: rotateY(180deg) translate3d(0,0,100px) scale(0.85,0.85);
+  transform: rotateY(180deg) translate3d(0,0,100px) scale(0.85,0.85);
+}
+
+.rotating.flip.cube.up .back {
+  -webkit-transform: rotateX(180deg) translate3d(0,0,100px) scale(0.9,0.9);
+  -moz-transform: rotateX(180deg) translate3d(0,0,100px) scale(0.85,0.85);
+  -ms-transform: rotateX(180deg) translate3d(0,0,100px) scale(0.85,0.85);
+  -o-transform: rotateX(180deg) translate3d(0,0,100px) scale(0.85,0.85);
+  transform: rotateX(180deg) translate3d(0,0,100px) scale(0.85,0.85);
+}

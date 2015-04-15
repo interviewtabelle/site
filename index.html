@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" /> 
+<title> </title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/font-awesome.min.css" />
+</head>
+<body>
+<header>
+	<nav id="nav">
+		<ul>
+			<li class="active"><a href="#home" title="Home">Home</a></li>
+			<li><a href="#about" title="About">About</a></li>
+			<li><a href="#team" title="Team">Team</a></li>
+			<li><a href="#reach" title="Reach Us">Reach Us</a></li>
+		</ul>
+		<div class="logo"></div>
+	</nav>
+</header>
+
+<section id="home" class="content_section">
+	<div class="parallex">
+		<div class="banner"></div>
+		<div class="intro">
+			<div class="intro-msg">
+				<h1>Building one of the <span class="rotate">disruptive,innovative,robust,revolutionary</span> interview platform!!</h1>
+				<p>We aim to revolutionize the industry by providing the best interview experience to our Customers around the world</p>
+			</div>
+
+            <form class="signupform" action="https://docs.google.com/forms/d/1cq5Bilqco3Eq3PZy7wua3VbVQ2eGOJMoZVN2pUvOTFg/formResponse" method="POST" target="signUpframe">
+				<input type="email" autocomplete="off" novalidate placeholder="Email Address"  name="entry.1980807551" id="entry.1980807551"/>
+				<a href="javascript:void(0)" id="signUp"> Sign Up</a>
+			</form>
+            <iframe class="hideframe" name="signUpframe" src="javascript:;"></iframe>
+				
+		</div>
+	</div> 
+</section>
+
+<section id="about" class="content_section">
+	<div class="container">
+		<h2>Why we?</h2>
+		<div class="reaction"></div>
+	</div>
+</section>
+
+<section id="team" class="content_section">
+	<div class="container">
+		<h2>Meet our team</h2>
+		<div class="people">
+			<img src="images/pichumani.jpg"/>
+			<img src="images/team.jpg"/>
+		</div>
+	</div>
+</section>
+
+<section id="reach" class="content_section">
+	<div class="container">
+		<h2>Reach Us</h2>
+		<ul class="social">
+			<li class="linkedin"><a href="https://in.linkedin.com/pub/interview-tabelle/b6/768/791" target="_blank"><i class="fa fa-linkedin fa-5x"></i></a></li>
+			<li class="twitter"><a href="https://twitter.com/interviewtablle" target="_blank"><i class="fa fa-twitter fa-5x"></i></a></li>
+			<li class="facebook"><a href="https://www.facebook.com/pages/Interview-Tabelle/1431996480428596?ref=hl" target="_blank"><i class="fa fa-facebook fa-5x"></i></a></li>
+		</ul>
+	</div>
+</section>
+
+<footer><span>&copy; Interview Tabelle 2015. All Right Reserved</span><img class="make" src="images/make.png"/></footer>
+<script type="text/javascript" src='js/jquery.js'></script>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="js/jquery.simple-text-rotator.min.js"></script>
+<script type="text/javascript" src="js/scrolltocontent.js"></script>
+<script>
+;(function ($) {
+	$(".rotate").textrotator({
+		animation: "flipUp", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
+		separator: ",", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
+		speed: 2000 // How many milliseconds until the next word show.
+	});
+
+	$("iframe[name='hiddenframe']").on("load", function(){
+		$("form")[0].reset();
+		$("input[type='email']").attr("disabled", "").val("Thanks for Sign Up.");
+		$("#signUp").hide();
+	});
+
+	$('#signUp').on('click', function(){
+		$('.signupform').submit();
+	});
+
+	$(window).scrollToContent();
+
+}(jQuery));
+</script>
+</body>
+</html>	
